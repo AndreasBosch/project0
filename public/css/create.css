@@ -1,0 +1,14 @@
+.containerRino{
+ width: 50%;
+ float: left;
+   
+}
+.containerRino div{ 
+    margin: 0 5%;
+    width: 80%
+}
+.container2{
+    width: 50%;
+    float: left;
+}
+

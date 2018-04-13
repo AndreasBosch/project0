@@ -13,7 +13,7 @@ const app = express();
 // EJS
 app.set('view engine', 'ejs');
 
-app.get('/', (req, res) => res.render('profile'))
+app.get('/user', (req, res) => res.render('profile'))
 
 
 app.use(logger('dev'));
@@ -23,6 +23,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 require('./routes/upload.js')(app);
+require('./routes/login.js')(app);
+require('./routes/profile.js')(app);
 
 // Public folder
 app.use(express.static('public'));
